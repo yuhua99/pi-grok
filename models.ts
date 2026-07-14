@@ -42,6 +42,15 @@ export const GROK_MODELS = [
     contextWindow: 256_000,
     maxTokens: 131_072,
   },
+  {
+    id: "grok-composer-2.5-fast",
+    name: "Composer 2.5",
+    reasoning: true,
+    input: ["text", "image"],
+    cost: { input: 1.0, output: 2.0, cacheRead: 0.2, cacheWrite: 0 },
+    contextWindow: 200_000,
+    maxTokens: 131_072,
+  },
 ] as const;
 
 export function grokModelForRequest(modelId?: string): Model<Api> {
