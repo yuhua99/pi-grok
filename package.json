@@ -1,0 +1,41 @@
+{
+  "name": "@yuhua99/pi-grok",
+  "version": "0.1.0",
+  "description": "Grok OAuth provider and tools for Pi coding agent.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuhua99/pi-grok.git"
+  },
+  "homepage": "https://github.com/yuhua99/pi-grok#readme",
+  "bugs": {
+    "url": "https://github.com/yuhua99/pi-grok/issues"
+  },
+  "type": "module",
+  "main": "index.ts",
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "lint": "oxlint"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "oxlint": "^1.69.0",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    },
+    "@earendil-works/pi-ai": {
+      "optional": true
+    }
+  }
+}
